@@ -1,11 +1,20 @@
 body {
     background-color: #f5f5eb;
     text-align: center;
+    margin: 0 15%;
 }
 
 body img {
     width: 200px;
     height: 200px;
+}
+
+.container {
+    text-align: start;
+}
+
+.title {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .all-content {
@@ -17,10 +26,19 @@ body img {
     cursor: pointer;
 }
 
-.title {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+.block {
+    border-top: 2px solid lightgrey;
+    padding-top: 10px;
+
 }
 
-.section {
-    font-size: x-large;
+.section-title {
+    font-size: large;
+    font-weight: bold;
+    list-style-type: none;
 }
+
+.section-title::marker {
+    content: "";
+}
+
