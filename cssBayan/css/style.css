@@ -1,0 +1,26 @@
+body {
+    background-color: #f5f5eb;
+    text-align: center;
+}
+
+body img {
+    width: 200px;
+    height: 200px;
+}
+
+.all-content {
+    color: blue;
+}
+
+.all-content:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.title {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.section {
+    font-size: x-large;
+}
