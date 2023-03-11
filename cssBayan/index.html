@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Nirvana</title>
@@ -7,31 +7,48 @@
 </head>
 <body>
 <div class="container">
-<h1 class="title">Nirvana Albums</h1>
-<br/>
-<div class="all-content">
-    <details open class="block">
-        <summary class="section-title">Bleach (1989)</summary>
-        <div class="image-div">
-            <img src="image/Nirvana-Bleach.jpg" alt="Bleach"/>
+    <h3 class="title">Nirvana Albums</h3>
+    <br/>
+    <div class="all-content">
+        <div class="block">
+            <input type="checkbox" checked id="bleach" class="block-input">
+            <label for="bleach" class="section-title">Bleach (1989)<span
+                    class="icon">+</span></label>
+            <div class="content">
+                <img src="assets/Nirvana-Bleach.jpg" alt="Bleach"/>
+            </div>
         </div>
-    </details>
-    <br/>
-    <details class="block">
-        <summary class="section-title">Incesticide (1992)</summary>
-            <img src="image/Nirvana-Incesticide.jpg" alt="Incesticide"/>
-    </details>
-    <br/>
-    <details class="block">
-        <summary class="section-title">In Utero (1993)</summary>
-            <img src="image/Nirvana-In_Utero.jpg" alt="In_Utero"/>
-    </details>
-    <br/>
-    <details class="block">
-        <summary class="section-title">MTV Unplugged in New York (1994)</summary>
-            <img src="image/Nirvana-Unplugged.jpg" alt="Unplugged"/>
-    </details>
-</div>
+        <br/>
+
+        <div class="block">
+            <input type="checkbox" id="incesticide" class="block-input">
+            <label for="incesticide" class="section-title">Incesticide (1992)<span
+                    class="icon">+</span></label>
+            <div class="content">
+                <img src="assets/Nirvana-Incesticide.jpg" alt="Incesticide"/>
+            </div>
+        </div>
+        <br/>
+
+        <div class="block">
+            <input type="checkbox" id="inUtero" class="block-input">
+            <label for="inUtero" class="section-title">In Utero (1993)<span
+                    class="icon">+</span></label>
+            <div class="content">
+                <img src="assets/Nirvana-In_Utero.jpg" alt="In_Utero"/>
+            </div>
+        </div>
+        <br/>
+
+        <div class="block">
+            <input type="checkbox" id="unplugged" class="block-input">
+            <label for="unplugged" class="section-title">MTV Unplugged in New York
+                (1994)<span class="icon">+</span></label>
+            <div class="content">
+                <img src="assets/Nirvana-Unplugged.jpg" alt="Unplugged"/>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

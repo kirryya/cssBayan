@@ -2,43 +2,90 @@ body {
     background-color: #f5f5eb;
     text-align: center;
     margin: 0 15%;
+    font-size: x-large;
 }
 
 body img {
-    width: 200px;
-    height: 200px;
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    border-radius: 5%;
 }
 
 .container {
     text-align: start;
+    opacity: 0;
+    animation: ani 2s forwards;
+}
+
+.all-content:hover .section-title {
+    color: black;
+}
+
+.all-content:hover {
+    cursor: pointer;
 }
 
 .title {
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-.all-content {
-    color: blue;
+.block {
+    border-top: solid lightgrey;
 }
 
-.all-content:hover {
+.block-input {
+    display: none;
+}
+
+.block-input:checked ~ .content {
+    display: block;
+}
+
+.block-input:hover ~ .content {
+    display: block;
+}
+
+.block-input:checked ~ .section-title {
     color: black;
     cursor: pointer;
 }
 
-.block {
-    border-top: 2px solid lightgrey;
-    padding-top: 10px;
+.block-input:hover ~ .section-title {
+    color: black;
+    cursor: pointer;
+}
 
+.all-content:hover .icon {
+    content: '\65291'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: black;
+    font-weight: bold;
+}
+
+.icon {
+    color: #f5f5eb;
 }
 
 .section-title {
-    font-size: large;
     font-weight: bold;
-    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    color: blue;
 }
 
-.section-title::marker {
-    content: "";
+.content {
+    display: none;
+    opacity: 0;
+    animation: ani 2s forwards;
 }
 
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
