@@ -18,38 +18,7 @@ body img {
     animation: ani 2s forwards;
 }
 
-.all-content:hover .section-title {
-    color: black;
-}
-
 .all-content:hover {
-    cursor: pointer;
-}
-
-.title {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
-.block-input {
-    display: none;
-    border-top: solid lightgrey;
-}
-
-.block-input:checked ~ .content {
-    display: block;
-}
-
-.section-title:hover .content {
-    display: block;
-}
-
-.block-input:checked ~ .block-input-title {
-    color: black;
-    cursor: pointer;
-}
-
-.section-title:hover .block-input-title {
-    color: black;
     cursor: pointer;
 }
 
@@ -57,13 +26,14 @@ body img {
     color: black;
 }
 
-.icon {
-    color: #f5f5eb;
+.all-content:hover .section-title {
+    color: black;
 }
 
-.block-input-title {
-    display: flex;
-    justify-content: space-between;
+.block {
+    padding: 0.5rem 0;
+    border-block-start: solid lightgrey;
+    writing-mode: horizontal-tb;
 }
 
 .section-title {
@@ -72,7 +42,48 @@ body img {
     width: 100%;
     height: 50vh;
     color: blue;
+}
 
+.section-title:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+
+.section-title:hover .content {
+    display: block;
+}
+
+.section-title:hover .block-input-title {
+    color: black;
+    cursor: pointer;
+}
+
+.block-input {
+    display: none;
+}
+
+.block-input:checked ~ .block-input-title .icon {
+    transform: rotate(45deg);
+}
+
+.block-input:checked ~ .content {
+    display: block;
+}
+
+.block-input:checked ~ .block-input-title {
+    color: black;
+    cursor: pointer;
+}
+
+.block-input-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    color: #f5f5eb;
+    font-weight: bolder;
 }
 
 .content {
