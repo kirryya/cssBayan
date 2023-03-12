@@ -36,7 +36,6 @@ label:hover .input-title {
 
 input {
     display: none;
-
 }
 
 input:checked ~ .input-title .icon {
@@ -52,7 +51,7 @@ input:checked ~ .input-title {
     cursor: pointer;
 }
 
-img{
+img {
     display: none;
     opacity: 0;
     animation: ani 2s forwards;
