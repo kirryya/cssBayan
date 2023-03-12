@@ -110,6 +110,18 @@ img {
     writing-mode: horizontal-tb;
 }
 
+.block:active .input-title {
+    color: blue;
+}
+
+.block:active .icon {
+    color: blue;
+}
+
+.block:active label img {
+    transform: scale(0.8);
+}
+
 .icon {
     color: #f5f5eb;
     font-weight: bolder;
